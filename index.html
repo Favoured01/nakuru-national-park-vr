@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GlobeVista - Nakuru National Park VR</title>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- Static image background (non-360) placeholder -->
+      <a-sky src="./1.JPG" rotation="0 -130 0"></a-sky>
+
+      <!-- Welcome Text -->
+      <a-text value="Welcome to Nakuru National Park" position="-2 2 -4" width="6" color="#FFD700"></a-text>
+
+      <!-- Bird Info Hotspot 1 -->
+      <a-sphere position="1 1.5 -3" radius="0.3" color="#F06292">
+        <a-animation attribute="rotation" to="0 360 0" dur="8000" repeat="indefinite"></a-animation>
+        <a-text value="Yellow-Billed Storks" align="center" position="0 -0.6 0" color="#222"></a-text>
+      </a-sphere>
+
+      <!-- Bird Info Hotspot 2 -->
+      <a-sphere position="-1 1.5 -2.5" radius="0.3" color="#4FC3F7">
+        <a-animation attribute="rotation" to="0 360 0" dur="8000" repeat="indefinite"></a-animation>
+        <a-text value="Pelicans in Flight" align="center" position="0 -0.6 0" color="#222"></a-text>
+      </a-sphere>
+
+      <!-- Background Nature Audio -->
+      <a-sound src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay="true" loop="true"></a-sound>
+
+    </a-scene>
+  </body>
+</html>
